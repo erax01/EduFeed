@@ -12,7 +12,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <title>EduFeed</title>
 
-<script type="text/javascript">
+<script src="../js/register.js">
 </script>
 
 </head>
@@ -68,7 +68,7 @@
     <form class="col s12">
 
       <!-- Code Eingabefeld -->
-      <div class="row">
+      <div id="divcode" class="row" style="display: block;">
         <div class="input-field col s12">
           <i class="material-icons prefix">vpn_key</i>
           <input  id="code" type="text" class="validate">
@@ -77,7 +77,7 @@
       </div>
 
       <!-- E-Mail Eingabefeld -->
-      <div class="row" style="display: none;">
+      <div id="dive-mail" class="row" style="display: none;">
         <div class="input-field col s12">
           <i class="material-icons prefix">email</i>
           <input id="e-mail" type="text" class="validate">
@@ -86,7 +86,7 @@
       </div>
 
       <!-- Benutzername Eingabefeld -->
-      <div class="row" style="display: none;">
+      <div id="divusername" class="row" style="display: none;">
         <div class="input-field col s12">
           <i class="material-icons prefix">account_circle</i>
           <input  id="username" type="text" class="validate">
@@ -95,7 +95,7 @@
       </div>
 
       <!-- Passwort Eingabefeld -->
-      <div class="row" style="display: none;">
+      <div id="divpassword" class="row" style="display: none;">
         <div class="input-field col s12">
           <i class="material-icons prefix">lock</i>
           <input id="password" type="password" class="validate">
@@ -105,7 +105,7 @@
 
         <!-- Submit Button -->
         <div class="row center">
-          <button class="btn waves-effect waves-light s12 light-blue" type="submit" name="action">Registrieren
+          <button class="btn waves-effect waves-light s12 light-blue" type="submit" name="action" onclick="CheckCode();">Registrieren
             <i class="material-icons right"></i>
           </button>
         </div>
